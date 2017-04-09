@@ -5,17 +5,23 @@ package javaslideviewer;
 
 import java.net.URL;
 import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.ToggleButton;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
- *
- * @author toru
+ * スライドビューアのフレームコントローラー。
+ * <p>
+ * ユーザー操作に基づき、スライドの切り替え制御を行う。
  */
 public class JavaSlideMainViewController implements Initializable {
     
@@ -23,7 +29,12 @@ public class JavaSlideMainViewController implements Initializable {
     private Pane contentPane;
     @FXML
     private ToggleButton fullScreenButton;
+    @FXML
+    private Parent rootPane;
     
+    private final List<KeyCode> previousKeys = Arrays.asList(KeyCode.LEFT, KeyCode.UP, KeyCode.PAGE_UP, KeyCode.BACK_SPACE);
+    private final List<KeyCode> nextKeys = Arrays.asList(KeyCode.RIGHT, KeyCode.DOWN, KeyCode.PAGE_DOWN, KeyCode.SPACE);
+            
     private JavaSlideViewModel model = new JavaSlideViewModel(Paths.get("."));
     
     @FXML
@@ -51,8 +62,15 @@ public class JavaSlideMainViewController implements Initializable {
             
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        fullScreenButton.getScene();
-        fullScreenButton.getScene().getWindow();
+        rootPane.addEventFilter(KeyEvent.KEY_PRESSED, event -> {
+            if (previousKeys.contains(event.getCode())) {
+                previousAction(new ActionEvent());
+                event.consume();
+            } else if (nextKeys.contains(event.getCode())) {
+                nextAction(new ActionEvent());
+                event.consume();
+            }
+        });
     }    
     
 }
