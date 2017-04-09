@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="267.0" prefWidth="266.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaslideviewer.JavaSlideMainViewController">
+<AnchorPane fx:id="rootPane" prefHeight="288.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaslideviewer.JavaSlideMainViewController">
    <children>
       <Pane fx:id="contentPane" prefHeight="225.0" prefWidth="266.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Button layoutY="241.0" mnemonicParsing="false" onAction="#previousAction" text="前へ" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" />
-      <Button alignment="CENTER_RIGHT" layoutX="67.0" layoutY="238.0" mnemonicParsing="false" onAction="#nextAction" text="次へ" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="67.0" />
+      <Button layoutX="230.0" layoutY="259.0" mnemonicParsing="false" onAction="#previousAction" text="前へ" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="230.0" />
+      <Button alignment="CENTER_RIGHT" layoutX="294.0" layoutY="259.0" mnemonicParsing="false" onAction="#nextAction" text="次へ" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="294.0" />
       <ToggleButton fx:id="fullScreenButton" layoutX="177.0" layoutY="241.0" mnemonicParsing="false" onAction="#fullscreenAction" text="全画面" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="4.0" />
+      <Label layoutY="263.0" style="-fx-font-size: 1em;" text="JJUG CCC 2017 Spring" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="4.0" />
    </children>
 </AnchorPane>
