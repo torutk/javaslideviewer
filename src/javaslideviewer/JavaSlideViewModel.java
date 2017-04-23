@@ -72,10 +72,12 @@ public class JavaSlideViewModel {
         try (Stream<Path> stream = Files.list(folder)) {
             slides = stream.map(path -> path.toFile().getName())
                     .filter(name -> name.toLowerCase().endsWith(".fxml"))
+                    .sorted()
                     .collect(Collectors.toList());
         } catch (IOException ex) {
             throw new UncheckedIOException(ex);
         }
+        logger.info(() -> String.format("Slides are %s%n", slides));
     }
     
     private void testData() {
