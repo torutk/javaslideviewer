@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="820.0" prefWidth="1196.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="88.0" prefWidth="1147.0" styleClass="heading" text="JavaFXで作る（JavaFX速習）(2/2)" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label prefHeight="613.0" prefWidth="944.0" styleClass="body" text="・Javaソースコード&#10;&#10;・FXML　：　シーングラフの定義&#10;&#10;・CSS　：　見栄えの定義&#10;　　- 外部CSSファイル&#10;　　- Javaソースコード／FXMLに記述" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="781.0" prefWidth="1105.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaslideviewer.Ccc008Controller">
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="ウィンドウ枠・背景を非表示(1/2)" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label style="-fx-font-size: 4em; -fx-font-family: consolas;" text="stage.initStyle(StageStyle.TRANSPARENT);&#10;scene.setFill(Color.TRANSPARENT);" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <GridPane prefHeight="73.0" prefWidth="1101.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#showDefaultStage" style="-fx-font-size: 3em;" text="デフォルト設定のStage" />
+            <Button mnemonicParsing="false" onAction="#showTransparentStage" style="-fx-font-size: 3em;" text="透明設定のStage" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

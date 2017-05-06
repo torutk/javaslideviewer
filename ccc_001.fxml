@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="34.0" layoutY="80.0" prefHeight="17.0" prefWidth="525.0" styleClass="heading" text="JavaFXでガジェット風プログラムを作成する" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="72.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="223.0" prefHeight="142.0" prefWidth="528.0" styleClass="body" text="JJUG CCC 2017 Spring #ccc_m6&#10;高橋　徹　@boochnich" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" />
+   </children>
+</AnchorPane>

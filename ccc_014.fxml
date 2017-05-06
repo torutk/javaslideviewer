@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="省リソース(1/2)" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label style="-fx-font-size: 3.5em;" text="・JVM 64bit上でJavaFXのHelloプログラムを動かすと…&#10;　- メモリ：500MB　（Private Bytes）&#10;　- スレッド：40&#10;　- GCでCPU酷使&#10;　　パラレルコレクタは搭載CPUの総スレッド数を使用&#10;　- JITコンパイルスレッド&#10;&#10;・省リソース（メモリ・CPU）の方針&#10;　- JVMオプションでガシガシ調整&#10;　- 32bit版JVMを使う&#10;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

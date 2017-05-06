@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="930.0" prefWidth="1313.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="HiDPI対応" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" spacing="24.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="body" text="・ Java SE 8u60から本格対応（JavaFXのみ）&#10;　　　- Java SE 9からSwingも対応&#10;&#10;・ 様々なDPI（Dots Per Inch）のディスプレイに対応&#10;&#10;・ JVMオプションでHiDPI対応有無の指定が可能" />
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="248.0" prefWidth="956.0" styleClass="code" text="　　-Dprism.allowhidpi=&lt;true|false&gt;&#10;&#10;　　　　デフォルト：true">
+               <padding>
+                  <Insets left="64.0" />
+               </padding></Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

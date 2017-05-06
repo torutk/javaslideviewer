@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1144.0" prefWidth="1494.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="114.0" prefWidth="601.0" styleClass="heading" text="省リソース(2/2)" />
+            <Label maxWidth="1.7976931348623157E308" styleClass="body" text="JVMオプションでガシガシ調整" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <Label maxWidth="1.7976931348623157E308" prefHeight="667.0" prefWidth="939.0" styleClass="code" text="・メモリサイズの調整&#10;　-Xms （初期ヒープサイズ） -Xmx （最大ヒープサイズ）&#10;　-Xss （スタックサイズ）&#10;　-XX:InitialCodeCacheSize  （初期コードキャッシュサイズ）&#10;　-XX:ReservedCodeCacheSize （最大コードキャッシュサイズ）&#10;・GCの指定　&#10;　-XX:+UseSerialGC （シリアル型GCを使用）&#10;・JITコンパイル&#10;　-XX:TieredStopAtLevel　（階層コンパイルの遷移上限）&#10;　-XX:CICompilerCount　　（JITコンパイルスレッド数）&#10;　-XX:CompileThreshold 他　（JITコンパイル実施閾値）" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

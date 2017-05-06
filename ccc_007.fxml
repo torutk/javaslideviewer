@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="803.0" prefWidth="1112.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="JavaFXで作る（開発環境）" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label styleClass="body" text="・Oracle Java SE 8 Development Kit(JDK)&#10;&#10;・好みのIDE（私はNetBeans）&#10;&#10;・Scene Builder　　： 画面作成&#10;&#10;・Scenic View　　　： 画面デバッグ&#9;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

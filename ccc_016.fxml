@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label maxWidth="1.7976931348623157E308" styleClass="heading" text="配布(1/2)" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label styleClass="body" text="・ネイティブインストーラー&#10;　- JREとアプリを一緒に配布&#10;　- OS固有のインストーラー形式&#10;　　Windows: exe、 msi&#10;　　Linux: deb、rpm&#10;　　Mac OS X: dmg、 pkg、 app store&#10;&#10;⇒ 32bit JVMと一緒に配布し実行が可能" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

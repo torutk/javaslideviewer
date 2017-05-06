@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="ソースコードとデモ(1)" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label styleClass="body" text=" (1) ウィンドウを移動する&#10;　　　マウス　ドラッグ＆ドロップ&#10;&#10; (2) ウィンドウの大きさを変える&#10;　　　⇒　マウスホイール&#10;&#10; (3) ウィンドウを閉じる&#10;　　　⇒　コンテキストメニュー" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

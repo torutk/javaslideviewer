@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="859.0" prefWidth="1073.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label styleClass="heading" text="ウィンドウ枠・背景を非表示(2/2)" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label styleClass="body" text="ウィンドウ枠がないと困ったことに・・・&#10;（１）ウィンドウを移動できない&#10;（２）ウィンドウの大きさが変えられない&#10;（３）終了させられない&#10;&#10;⇒　ドラッグ＆ドロップで移動&#10;⇒　ホイールで大きさを変える&#10;⇒　右クリックでポップアップメニュー" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
