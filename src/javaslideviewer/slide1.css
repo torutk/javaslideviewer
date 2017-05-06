@@ -1,3 +1,16 @@
 .label {
     -fx-font-family: "Meiryo";
 }
+
+.label.heading {
+    -fx-font-size: 6em;
+    -fx-alignment: center;
+}
+
+.label.body {
+    -fx-font-size: 4em;
+}
+.label.code {
+    -fx-font-size: 3.5em;
+    -fx-font-family: "Consolas";
+}
