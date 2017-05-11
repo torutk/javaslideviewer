@@ -16,6 +16,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.stage.WindowEvent;
 
 /**
  *
@@ -30,6 +31,7 @@ public class Ccc008Controller implements Initializable {
         Scene scene = new Scene(root, 640, 480);
         Stage stage = new Stage();
         stage.setScene(scene);
+        stage.initOwner(slideStage);
         stage.setTitle("デフォルト設定のStage");
         stage.setOnCloseRequest(e -> {
             stage.close();
@@ -47,7 +49,10 @@ public class Ccc008Controller implements Initializable {
         Stage stage = new Stage();
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
+        Stage slideStage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.initOwner(slideStage);
         stage.setTitle("デフォルト設定のStage");
+        scene.setOnMouseClicked(e -> stage.fireEvent(new WindowEvent(stage, WindowEvent.WINDOW_CLOSE_REQUEST)));
         stage.setOnCloseRequest(e -> {
             stage.close();
             e.consume();
