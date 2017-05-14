@@ -12,7 +12,7 @@
       <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="ウィンドウ枠・背景を非表示(1/2)" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <Label style="-fx-font-size: 4em; -fx-font-family: consolas;" text="stage.initStyle(StageStyle.TRANSPARENT);&#10;scene.setFill(Color.TRANSPARENT);" BorderPane.alignment="CENTER" />
+      <Label style="-fx-background-color: papayawhip; -fx-font-size: 3em;" styleClass="code" text="stage.initStyle(StageStyle.TRANSPARENT);&#10;scene.setFill(Color.TRANSPARENT);" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
       <GridPane prefHeight="73.0" prefWidth="1101.0" BorderPane.alignment="CENTER">

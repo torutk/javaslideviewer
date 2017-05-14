@@ -8,6 +8,6 @@
       <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="JavaFXで作る（開発環境）" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <Label styleClass="body" text="・Oracle Java SE 8 Development Kit(JDK)&#10;&#10;・好みのIDE（私はNetBeans）&#10;&#10;・Scene Builder　　： 画面作成&#10;&#10;・Scenic View　　　： 画面デバッグ&#9;" BorderPane.alignment="CENTER" />
+      <Label styleClass="body" text="・Oracle Java SE 8 Development Kit(JDK)&#10;&#10;・好みのIDE（例：NetBeans）&#10;&#10;・Scene Builder　　： 画面作成&#10;&#10;・Scenic View　　　： 画面デバッグ&#9;" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

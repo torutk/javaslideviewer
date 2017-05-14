@@ -8,6 +8,6 @@
       <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="ソースコードとデモ(1)" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <Label styleClass="body" text=" (1) ウィンドウを移動する&#10;　　　マウス　ドラッグ＆ドロップ&#10;&#10; (2) ウィンドウの大きさを変える&#10;　　　⇒　マウスホイール&#10;&#10; (3) ウィンドウを閉じる&#10;　　　⇒　コンテキストメニュー" BorderPane.alignment="CENTER" />
+      <Label styleClass="body" text=" (1) ウィンドウを移動する&#10;　　　⇒　マウス　ドラッグ＆ドロップ&#10;&#10; (2) ウィンドウの大きさを変える&#10;　　　⇒　Ctrl＋マウスホイール&#10;&#10; (3) ウィンドウを閉じる&#10;　　　⇒　コンテキストメニュー" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

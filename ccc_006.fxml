@@ -8,6 +8,6 @@
       <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="88.0" prefWidth="1147.0" styleClass="heading" text="JavaFXで作る（JavaFX速習）(2/2)" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <Label prefHeight="613.0" prefWidth="944.0" styleClass="body" text="・Javaソースコード&#10;&#10;・FXML　：　シーングラフの定義&#10;&#10;・CSS　：　見栄えの定義&#10;　　- 外部CSSファイル&#10;　　- Javaソースコード／FXMLに記述" BorderPane.alignment="CENTER" />
+      <Label prefHeight="613.0" prefWidth="1053.0" styleClass="body" text="・Javaソースコード　　　（must）&#10;&#10;・FXML：　シーングラフの定義　（option）&#10;&#10;・CSS  ：　見栄えの定義　　　　（option）&#10;　　- 外部CSSファイル&#10;　　- Javaソースコード／FXMLに記述" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

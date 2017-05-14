@@ -12,7 +12,7 @@
       <VBox BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="600.0" styleClass="heading" text="ガジェット風なプログラムとは" />
-            <Label maxWidth="1.7976931348623157E308" prefHeight="9.0" prefWidth="1016.0" styleClass="body" text="デスクトップの片隅で動くちょっとしたGUIプログラム">
+            <Label maxWidth="1.7976931348623157E308" prefHeight="153.0" prefWidth="1372.0" styleClass="body" text="デスクトップの片隅で動く、ちょっとしたGUIプログラム" wrapText="true">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -21,7 +21,7 @@
       </VBox>
    </top>
    <right>
-      <Label maxWidth="1.7976931348623157E308" styleClass="body" text="・ウィンドウ枠非表示&#10;・背景非表示&#10;・タッチパネル対応&#10;・HiDPI対応&#10;・前回状態の保存&#10;・CPU／メモリ使用は最小限に&#10;" BorderPane.alignment="CENTER" />
+      <Label maxWidth="1.7976931348623157E308" style="-fx-font-size: 3em;" styleClass="body" text="・ウィンドウ枠非表示&#10;・背景非表示&#10;・タッチパネル対応&#10;・HiDPI対応&#10;・前回状態の保存&#10;・省CPU／メモリ使用&#10;" BorderPane.alignment="CENTER" />
    </right>
    <center>
       <ImagePane preserveRatio="true" BorderPane.alignment="CENTER">
@@ -29,8 +29,11 @@
             <Image url="@IC295044.png" />
          </image>
          <BorderPane.margin>
-            <Insets top="32.0" />
+            <Insets top="46.0" />
          </BorderPane.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
       </ImagePane>
    </center>
 </BorderPane>

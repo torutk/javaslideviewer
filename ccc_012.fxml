@@ -12,8 +12,8 @@
    <center>
       <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" spacing="24.0" BorderPane.alignment="CENTER">
          <children>
-            <Label styleClass="body" text="・ Java SE 8u60から本格対応（JavaFXのみ）&#10;　　　- Java SE 9からSwingも対応&#10;&#10;・ 様々なDPI（Dots Per Inch）のディスプレイに対応&#10;&#10;・ JVMオプションでHiDPI対応有無の指定が可能" />
-            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="248.0" prefWidth="956.0" styleClass="code" text="　　-Dprism.allowhidpi=&lt;true|false&gt;&#10;&#10;　　　　デフォルト：true">
+            <Label styleClass="body" text="・ Java SE 8u60から本格対応（JavaFX）&#10;　　　- Java SE 9からSwingも対応&#10;&#10;・ 様々なDPIのディスプレイに対応&#10;・ JVMオプションでHiDPI対応有無指定可" />
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="248.0" prefWidth="956.0" style="-fx-font-size: 3em;" styleClass="code" text="　　-Dprism.allowhidpi=&lt;true|false&gt;&#10;&#10;　　　　デフォルト：true">
                <padding>
                   <Insets left="64.0" />
                </padding></Label>
