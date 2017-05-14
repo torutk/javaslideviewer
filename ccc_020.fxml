@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label maxWidth="1.7976931348623157E308" styleClass="heading" text="URL" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label styleClass="code" text="・サンプルコード&#10;https://github.com/torutk/jjugccc2017spring-javafx&#10;・本発表の準備ページ&#10;https://goo.gl/CNdVjL&#10;・Scene Builderダウンロード&#10;http://gluonhq.com/products/scene-builder/&#10;・Scenic View&#10;http://fxexperience.com/scenic-view/&#10;&#10;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
