@@ -8,6 +8,6 @@
       <Label styleClass="heading" text="ウィンドウ枠・背景を非表示(2/2)" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <Label styleClass="body" text="ウィンドウ枠がないと困ったことに・・・&#10;（１）ウィンドウを移動できない&#10;（２）ウィンドウの大きさが変えられない&#10;（３）終了させられない&#10;&#10;⇒　ドラッグ＆ドロップで移動&#10;⇒　Ctrlキー + ホイールで大きさを変更&#10;⇒　右クリックでポップアップメニュー" BorderPane.alignment="CENTER" />
+      <Label styleClass="body" text="ウィンドウ枠がないと困ったことに・・・&#10;（１）ウィンドウを移動できない&#10;（２）ウィンドウの大きさを変えられない&#10;（３）終了させられない&#10;&#10;⇒　マウスドラッグで移動&#10;⇒　Ctrlキー + ホイールで大きさを変更&#10;⇒　ポップアップメニューで終了" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

@@ -12,7 +12,7 @@
    <center>
       <VBox spacing="64.0" BorderPane.alignment="CENTER">
          <children>
-            <Label styleClass="body" text="JAR + シェルスクリプト／バッチファイル&#10;・JARファイルの先頭に起動コマンドを記述&#10;・作成例（Windows／バッチファイル）" />
+            <Label styleClass="body" text="JAR + シェルスクリプト／バッチファイルを&#10;一つのファイルに結合&#10;&#10;・作成と実行例（Windows／バッチファイル）" />
             <Label styleClass="code" text="tiny.src.bat - &#9;起動コマンドを記述したバッチファイル&#10;tiny.jar     -  実行可能JARファイル&#10;&#10;C:\work&gt; copy /b tiny.src.bat+tiny.jar tiny.bat&#10;&#10;C:\work&gt; tiny">
                <padding>
                   <Insets left="32.0" />

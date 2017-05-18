@@ -8,6 +8,6 @@
       <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="省リソース(1/2)" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <Label prefHeight="590.0" prefWidth="1084.0" style="-fx-font-size: 2.7em;" text="・JVM 64bit上でJavaFX Helloプログラムは…&#10;　- メモリ：500MB（Private Bytes）※32GB搭載PC&#10;　- スレッド：40&#10;　- GCでCPU酷使&#10;　　パラレルコレクタは搭載CPUの総スレッド数を使用&#10;　- JITコンパイルスレッド&#10;&#10;・省リソース（メモリ・CPU）の方針&#10;　- JVMオプションでガシガシ調整&#10;　- 32bit版JVMを使う&#10;" BorderPane.alignment="CENTER" />
+      <Label prefHeight="590.0" prefWidth="1084.0" style="-fx-font-size: 2.7em;" text="・JVM 64bit上でJavaFX Helloプログラムは…&#10;　- メモリ：500MB　（※32GBメモリ搭載PCで実行時）&#10;　- スレッド：40&#10;　- GCでCPU酷使&#10;　　パラレルコレクタは搭載CPUの総スレッド数を使用&#10;　- JITコンパイルスレッド&#10;&#10;・省リソース（メモリ・CPU）の方針&#10;　- JVMオプションでガシガシ調整&#10;　- 32bit版JVMを使う&#10;" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
