@@ -101,6 +101,13 @@ public class JavaSlideMainViewController implements Initializable {
                 event.consume();
             }
         });
+        rootPane.setOnMouseClicked(event -> {
+            if (event.isAltDown()) {
+                previousAction(new ActionEvent());
+            } else {
+                nextAction(new ActionEvent());
+            }
+        });
         model.next().ifPresent(this::setContent);
     }    
     
