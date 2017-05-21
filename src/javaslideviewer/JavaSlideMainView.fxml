@@ -20,5 +20,6 @@
             <Image url="@DukeTubbing.png" />
          </image>
       </ImageView>
+      <Button layoutX="852.0" layoutY="664.0" mnemonicParsing="false" onAction="#printAction" text="印刷" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="128.0" />
    </children>
 </AnchorPane>

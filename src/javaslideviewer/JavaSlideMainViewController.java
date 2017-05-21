@@ -8,19 +8,25 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 import javafx.animation.SequentialTransition;
 import javafx.animation.Transition;
 import javafx.animation.TranslateTransition;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.HPos;
+import javafx.print.PrinterJob;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import javafx.util.Duration;
 
 /**
@@ -50,6 +56,18 @@ public class JavaSlideMainViewController implements Initializable {
     @FXML
     private void previousAction(ActionEvent event) {
         model.previous().ifPresent(element -> changeContent(element, HPos.RIGHT));
+    }
+    
+    @FXML
+    private void printAction(ActionEvent event) {
+        Task<Boolean> printTask = new Task<Boolean>() {
+            @Override
+            public Boolean call() {
+                return printNode(contentPane);
+            }
+        };
+        Executor executor = Executors.newSingleThreadExecutor();
+        executor.execute(printTask);
     }
     
     @FXML
@@ -88,6 +106,17 @@ public class JavaSlideMainViewController implements Initializable {
         transition.setFromX(translateX);
         transition.setToX(0);
         return transition;
+    }
+    
+    private boolean printNode(Node node) {
+        PrinterJob job = PrinterJob.createPrinterJob();
+        if (job == null) 
+            return false;
+        Window window = node.getScene().getWindow();
+        job.showPrintDialog(window);
+        //job.showPageSetupDialog(window);
+        job.printPage(node);
+        return job.endJob();
     }
     
     @Override
