@@ -21,7 +21,7 @@
       </VBox>
    </top>
    <right>
-      <Label maxWidth="1.7976931348623157E308" style="-fx-font-size: 3em;" styleClass="body" text="・ウィンドウ枠非表示&#10;・背景非表示&#10;・タッチパネル対応&#10;・HiDPI対応&#10;・前回状態の保存&#10;・省CPU／省メモリ&#10;" BorderPane.alignment="CENTER" />
+      <Label maxWidth="1.7976931348623157E308" style="-fx-font-size: 3em;" styleClass="body" text="・ウィンドウ枠非表示&#10;・背景非表示&#10;・タッチパネル対応&#10;・前回状態の保存&#10;・省CPU／省メモリ&#10;" BorderPane.alignment="CENTER" />
    </right>
    <center>
       <ImagePane preserveRatio="true" BorderPane.alignment="CENTER">
