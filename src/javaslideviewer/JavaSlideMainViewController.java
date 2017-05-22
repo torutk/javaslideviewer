@@ -18,6 +18,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.HPos;
+import javafx.print.PageLayout;
+import javafx.print.PageOrientation;
+import javafx.print.Paper;
+import javafx.print.Printer;
 import javafx.print.PrinterJob;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -25,6 +29,7 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
+import javafx.scene.transform.Scale;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import javafx.util.Duration;
@@ -112,11 +117,21 @@ public class JavaSlideMainViewController implements Initializable {
         PrinterJob job = PrinterJob.createPrinterJob();
         if (job == null) 
             return false;
-        Window window = node.getScene().getWindow();
-        job.showPrintDialog(window);
-        //job.showPageSetupDialog(window);
-        job.printPage(node);
-        return job.endJob();
+        Window topWindow = node.getScene().getWindow();
+        if (!job.showPrintDialog(topWindow))
+            return false;
+        Printer printer = job.getPrinter();
+        PageLayout pageLayout = printer.createPageLayout(Paper.A4, PageOrientation.LANDSCAPE, Printer.MarginType.EQUAL);
+        double scaleX = pageLayout.getPrintableWidth() / topWindow.getWidth() * 0.9;
+        double scaleY = pageLayout.getPrintableHeight() / topWindow.getHeight() * 0.9;
+        Scale scale = new Scale(scaleX, scaleY);
+        node.getTransforms().add(scale);
+        if (job.printPage(node)) {
+            node.getTransforms().remove(scale);
+            return job.endJob();            
+        }
+        node.getTransforms().remove(scale);
+        return false;
     }
     
     @Override
