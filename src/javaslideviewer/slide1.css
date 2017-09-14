@@ -3,14 +3,14 @@
 }
 
 .label.heading {
-    -fx-font-size: 4em; /* 6em; */
+    -fx-font-size: 3em; 
     -fx-alignment: center;
 }
 
 .label.body {
-    -fx-font-size: 3.5em; /* 4em; */
+    -fx-font-size: 2.5em;
 }
 .label.code {
-    -fx-font-size: 2.5em; /* 3.5em; */
+    -fx-font-size: 1.5em;
     -fx-font-family: "Consolas";
 }

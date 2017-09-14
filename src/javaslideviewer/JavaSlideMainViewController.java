@@ -27,6 +27,7 @@ import javafx.util.Duration;
  * スライドビューアのフレームコントローラー。
  * <p>
  * ユーザー操作に基づき、スライドの切り替え制御を行う。
+ * 操作は、画面右下のボタン（[前へ][次へ][全画面]）、またはキー押下で行う。
  */
 public class JavaSlideMainViewController implements Initializable {
     
@@ -37,27 +38,33 @@ public class JavaSlideMainViewController implements Initializable {
     @FXML
     private Parent rootPane;
     
+    // スライドの切り替えを行うキーをリストで定義
     private final List<KeyCode> previousKeys = Arrays.asList(KeyCode.LEFT, KeyCode.UP, KeyCode.PAGE_UP, KeyCode.BACK_SPACE);
     private final List<KeyCode> nextKeys = Arrays.asList(KeyCode.RIGHT, KeyCode.DOWN, KeyCode.PAGE_DOWN, KeyCode.SPACE);
             
+    // スライドとなる画面のリストを管理、イテレートするモデル
     private JavaSlideViewModel model = new JavaSlideViewModel(Paths.get("."));
     
+    // 次のスライドへ遷移する
     @FXML
     private void nextAction(ActionEvent event) {
         model.next().ifPresent(element -> changeContent(element, HPos.LEFT));
     }
 
+    // 前のスライドへ遷移する
     @FXML
     private void previousAction(ActionEvent event) {
         model.previous().ifPresent(element -> changeContent(element, HPos.RIGHT));
     }
     
+    // フルスクリーンモードへ移行またはフルスクリーンモードを解除する
     @FXML
     private void fullscreenAction(ActionEvent event) {
         Stage stage = (Stage)fullScreenButton.getParent().getScene().getWindow();
         stage.setFullScreen(fullScreenButton.isSelected());
     }
     
+    // 指定した pane をスライドとして表示する。
     private void setContent(Pane pane) {
         contentPane.getChildren().clear();
         contentPane.getChildren().add(pane);
@@ -65,6 +72,8 @@ public class JavaSlideMainViewController implements Initializable {
         pane.prefHeightProperty().bind(contentPane.heightProperty());
     }
     
+    // 指定した pane を、アニメーション効果を付けて表示する。
+    // 現在表示している pane を指定した方向にスライドアウトさせ、指定した pane を指定した方向へスライドインする。
     private void changeContent(Pane pane, HPos direction) {
         Pane oldPane = (Pane) contentPane.getChildren().get(0);
         Transition slideOutTransition = createSlideOutTransition(oldPane, direction);
@@ -73,14 +82,16 @@ public class JavaSlideMainViewController implements Initializable {
         SequentialTransition slideTransition = new SequentialTransition(slideOutTransition, slideInTransition);
         slideTransition.play();
     }
-        
+
+    // 指定した pane を指定した方向へスライドアウトするアニメーションを生成する
     private Transition createSlideOutTransition(Pane oldPane, HPos direction) {
         TranslateTransition transition = new TranslateTransition(Duration.seconds(0.75), oldPane);
         transition.setFromX(0);
         transition.setToX(direction == HPos.LEFT ? -oldPane.getWidth() : oldPane.getWidth());
         return transition;
     }
-    
+
+    // 指定した pane を指定した方向へスライドインするアニメーションを生成する
     private Transition createSlideInTransition(Pane pane, HPos direction) {
         double translateX = direction == HPos.LEFT ? contentPane.getWidth() : -contentPane.getWidth();
         pane.setTranslateX(translateX);
@@ -90,6 +101,16 @@ public class JavaSlideMainViewController implements Initializable {
         return transition;
     }
     
+    /**
+     * コントローラを初期化する（対になるFXMLファイルがロードされたときに呼ばれる）。
+     * <ul>
+     * <li>マウスクリックでスライドの次への遷移のイベント処理
+     * <li>キー操作によるスライドの前/次遷移のイベント処理
+     * <li>スライドの初期設定
+     * </ul>
+     * @param url
+     * @param rb 
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         rootPane.addEventFilter(KeyEvent.KEY_PRESSED, event -> {
