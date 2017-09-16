@@ -20,8 +20,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 
 /**
- * 
- * @author toru
+ * スライドのデータを保持しイテレートするモデルクラス。
+ * <ul>
+ * <li>指定したフォルダに存在する拡張子 .fxml のファイルを名前順でソートし保持する
+ * <li>イテレートの際にfxmlファイルをロードしてノードのツリーを構成（プログラムを再起動しなくてもFXMLファイルの編集がページ遷移で反映）
+ * </ul>
  */
 public class JavaSlideViewModel {
     private static final Logger logger = Logger.getLogger(JavaSlideViewModel.class.getName());
