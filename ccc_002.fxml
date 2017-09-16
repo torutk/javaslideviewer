@@ -5,11 +5,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="1139.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label alignment="CENTER" layoutY="6.0" prefHeight="17.0" prefWidth="600.0" styleClass="heading" text="発表者について" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Label layoutX="8.0" layoutY="86.0" prefHeight="597.0" prefWidth="1103.0" style="-fx-font-size: 2.2em;" text="・1996年よりJavaに触れる&#10;・Java GUIは、AWT、Swing、JavaFX&#10;　他は、X Window System/Motif、GTK+、Qt、Visual C++/MFC等&#10;&#10;・コミュニティ活動&#10;　- Java読書会BOF（代表）&#10;　http://www.javareading.com/bof/&#10;&#10;・ホームページ・ブログ等&#10;　http://www.02.246.ne.jp/~torutk/    （ホームページ）&#10;　http://d.hatena.ne.jp/torutk/            （ブログ）&#10;　http://www.torutk.com                    （Redmine）&#10;" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="86.0" />
-      <ImageView fitHeight="101.0" fitWidth="324.0" layoutX="750.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="320.0" AnchorPane.rightAnchor="0.0">
+      <Label layoutX="8.0" layoutY="86.0" style="-fx-font-size: 2em;" text="・1996年よりJavaに触れる&#10;・Java GUIは、AWT、Swing、JavaFX&#10;　他は、X Window System/Motif、GTK+、Qt、Visual C++/MFC等&#10;&#10;・コミュニティ活動&#10;　- Java読書会BOF（代表）&#10;　http://www.javareading.com/bof/&#10;&#10;・ホームページ・ブログ等&#10;　http://www.02.246.ne.jp/~torutk/    （ホームページ）&#10;　http://d.hatena.ne.jp/torutk/            （ブログ）&#10;　http://www.torutk.com                    （Redmine）&#10;" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="86.0" />
+      <ImageView fitHeight="101.0" fitWidth="324.0" layoutX="468.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="189.81818389892578" AnchorPane.rightAnchor="8.0">
          <image>
             <Image url="@JavaReadingBOF_Logo_300dpi.png" />
          </image>

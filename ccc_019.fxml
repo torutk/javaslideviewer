@@ -6,12 +6,12 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="ガジェット風プログラム例" BorderPane.alignment="CENTER" />
    </top>
    <right>
-      <Label styleClass="body" text=" (1) アナログ時計&#10;&#10; (2) カレンダー&#10;&#10; (3) 3D地球表示&#10;&#10; (4) 画像ビューア" BorderPane.alignment="CENTER" />
+      <Label prefHeight="336.0" prefWidth="368.0" styleClass="body" text=" (1) アナログ時計&#10;&#10; (2) カレンダー&#10;&#10; (3) 3D地球表示&#10;&#10; (4) 画像ビューア" BorderPane.alignment="CENTER" />
    </right>
    <center>
       <ImagePane prefHeight="582.0" prefWidth="628.0" preserveRatio="true" BorderPane.alignment="CENTER">
