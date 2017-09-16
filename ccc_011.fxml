@@ -3,11 +3,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="854.0" prefWidth="1179.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="heading" text="ソースコードとデモ(2) &#10;～タッチパネル対応" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <Label prefHeight="531.0" prefWidth="1190.0" style="-fx-font-size: 3em;" styleClass="body" text=" (1) ウィンドウを移動する&#10;　　　スクロール（ドラッグ、スワイプ、スライド）&#10;　　　⇒　対処不要&#10; (2) ウィンドウの大きさを変える&#10;　　　ズーム（ピンチ、ストレッチ）&#10;　　　⇒　要対処&#10; (3) ウィンドウを閉じる（コンテキストメニュー）&#10;　　　長いタッチ（タッチ&amp;ホールド、ロングプレス）&#10;　　　⇒　対処不要" BorderPane.alignment="CENTER" />
+      <Label prefHeight="531.0" prefWidth="1190.0" styleClass="body" text=" (1) ウィンドウを移動する&#10;　　　スクロール（ドラッグ、スワイプ、スライド）&#10;　　　⇒　対処不要&#10; (2) ウィンドウの大きさを変える&#10;　　　ズーム（ピンチ、ストレッチ）&#10;　　　⇒　要対処&#10; (3) ウィンドウを閉じる（コンテキストメニュー）&#10;　　　長いタッチ（タッチ&amp;ホールド、ロングプレス）&#10;　　　⇒　対処不要" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
