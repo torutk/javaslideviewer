@@ -30,7 +30,6 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
-import javafx.scene.transform.Scale;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import javafx.util.Duration;
@@ -40,6 +39,8 @@ import javafx.util.Duration;
  * <p>
  * ユーザー操作に基づき、スライドの切り替え制御を行う。
  * 操作は、画面右下のボタン（[前へ][次へ][全画面]）、またはキー押下で行う。
+ * [印刷]ボタンは、そのスライドのコンテンツ領域（フッターを含まない）を対象に印刷する。
+ * 全画面モードでは印刷できないので印刷ボタンを非活性とする。
  */
 public class JavaSlideMainViewController implements Initializable {
     
@@ -86,7 +87,7 @@ public class JavaSlideMainViewController implements Initializable {
     // フルスクリーンモードへ移行またはフルスクリーンモードを解除する
     @FXML
     private void fullscreenAction(ActionEvent event) {
-        Stage stage = (Stage)fullScreenButton.getParent().getScene().getWindow();
+        Stage stage = (Stage) fullScreenButton.getParent().getScene().getWindow();
         stage.setFullScreen(fullScreenButton.isSelected());
     }
     
@@ -137,9 +138,10 @@ public class JavaSlideMainViewController implements Initializable {
             return false;
         }
         Printer printer = job.getPrinter();
+        // A4横で印刷する設定での表示範囲を取得
         PageLayout pageLayout = printer.createPageLayout(Paper.A4, PageOrientation.LANDSCAPE, Printer.MarginType.EQUAL);
-        double scaleX = pageLayout.getPrintableWidth() / topWindow.getWidth() * 0.8;
-        double scaleY = pageLayout.getPrintableHeight() / topWindow.getHeight() * 0.8;
+        double scaleX = pageLayout.getPrintableWidth() / topWindow.getWidth() * 0.8; // 最後の項は表示欠けを防ぐための暫定係数
+        double scaleY = pageLayout.getPrintableHeight() / topWindow.getHeight() * 0.8; // 同上
         double originalScaleX = node.getScaleX();
         double originalScaleY = node.getScaleY();
         node.setScaleX(scaleX);
